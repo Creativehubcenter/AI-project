@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
+  <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+  <script src="https://jsuites.net/v5/jsuites.js"></script>
+  <link rel="stylesheet" href="https://jsuites.net/v5/jsuites.css" type="text/css" />
+
+  <title>AI Content Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>AI Content Generator</h1>
+    <p>Type your instructions and let AI generate content for you.</p>
+
+    <form id="aiForm">
+      <textarea id="userInput" placeholder="Write your instructions here..." required></textarea>
+      <button type="submit">Generate</button>
+    </form>
+
+    <div id="loading" class="loading" style="display:none;">Generating...</div>
+
+    <div class="output">
+      <h2>Result:</h2>
+      <p id="aiOutput"></p>
+      <button class="copy-btn" data-clipboard-target="#aiOutput">Copy Result</button>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
