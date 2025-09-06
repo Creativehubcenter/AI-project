@@ -1,3 +1,4 @@
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +6,7 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* Background */
 body {
   background: #f5f7fa;
   display: flex;
@@ -15,6 +17,7 @@ body {
   color: #333;
 }
 
+/* Container */
 .container {
   background: #fff;
   padding: 30px;
@@ -26,6 +29,7 @@ body {
   animation: fadeIn 0.8s ease;
 }
 
+/* Headings */
 h1 {
   font-size: 28px;
   color: #2b2d42;
@@ -38,6 +42,7 @@ p {
   margin-bottom: 20px;
 }
 
+/* Textarea */
 textarea {
   width: 100%;
   height: 140px;
@@ -55,6 +60,7 @@ textarea:focus {
   outline: none;
 }
 
+/* Buttons */
 button {
   width: 100%;
   padding: 12px;
@@ -86,6 +92,7 @@ button[type="submit"]:hover {
   background: #e9ecef;
 }
 
+/* Output */
 .output {
   margin-top: 20px;
   text-align: left;
@@ -105,6 +112,7 @@ button[type="submit"]:hover {
   white-space: pre-line;
 }
 
+/* Loading Text */
 .loading {
   font-size: 14px;
   color: #444;
@@ -119,6 +127,7 @@ button[type="submit"]:hover {
   100% { opacity: 0.6; }
 }
 
+/* Fade-in Animation */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
