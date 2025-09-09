@@ -1,34 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
-  <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
-  <script src="https://jsuites.net/v5/jsuites.js"></script>
-  <link rel="stylesheet" href="https://jsuites.net/v5/jsuites.css" type="text/css" />
-
-  <title>AI Content Generator</title>
-  <link rel="stylesheet" href="src/style.css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Generator</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <div class="container">
-    <h1>AI Content Generator</h1>
-    <p>Type your instructions and let AI generate content for you.</p>
+  <header>
+    <h1>✨ AI Generator ✨</h1>
+    <p>Enter your instructions and generate poems, jokes, recipes, quotes, or more!</p>
+  </header>
 
-    <form id="aiForm">
-      <textarea id="userInput" placeholder="Write your instructions here..." required></textarea>
-      <button type="submit">Generate</button>
+  <main class="container">
+    <form id="generator-form">
+      <label for="instruction">Your Instruction:</label>
+      <textarea id="instruction" rows="4" placeholder="e.g. Write me a poem about friendship"></textarea>
+      <button type="submit" class="btn">Generate</button>
     </form>
 
-    <div id="loading" class="loading" style="display:none;">Generating...</div>
-
-    <div class="output">
-      <h2>Result:</h2>
-      <p id="aiOutput"></p>
-      <button class="copy-btn" data-clipboard-target="#aiOutput">Copy Result</button>
-    </div>
+    <section id="output-section">
+      <h2>Generated Result:</h2>
+      <div id="output-box">Your AI content will appear here...</div>
+    </section>
+  </main>
   <footer>
     coded by <strong>Sea Phogojane</strong>it is an open source on 
     <a href="https://github.com/Creativehubcenter/AI-project.git">GitHub</a>
